@@ -125,9 +125,7 @@ const Skills = () => {
 
       <div className="skills-header">
 
-        <span className="section-tag">
-          💻 Skills
-        </span>
+        
 
         <h2>
           Technologies I Work With
