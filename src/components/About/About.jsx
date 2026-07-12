@@ -1,5 +1,5 @@
 import "./About.css";
-import about from "../../assets/about.png";
+import about from "../../assets/img2.jpeg";
 
 import {
   FaGraduationCap,

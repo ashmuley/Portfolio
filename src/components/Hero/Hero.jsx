@@ -1,24 +1,42 @@
 import "./Hero.css";
+import SplitText from "../../effects/SplitText";
+import PixelTransition from '../../effects/PixelTransition';
 
-import hero from "../../assets/hero.png";
+import hero from "../../assets/img1.png";
 
 const Hero = () => {
-  return (
+  return (  
 
     <div className="herobox">
       <section className="hero" id="home">
 
       <div className="hero-left">
 
-        <span className="hero-tag">
+        {/* <span className="hero-tag">
           👋 Hello, I'm
-        </span>
+        </span> */}
 
-        <h1>
+        {/* <h1>
           Akshat Muley
-          {/* <br /> */}
-          {/* <span>Muley</span> */}
+          
+        </h1> */}
+        <h1 className="hero-name">
+
+          <SplitText
+        text="Akshat Muley"
+         tag="h1"
+        delay={50}
+        duration={1.25}
+        ease="power3.out"
+        splitType="chars"
+        from={{ opacity: 0, y: 40 }}
+        to={{ opacity: 1, y: 0 }}
+        threshold={0.1}
+        rootMargin="-100px"
+        
+      />
         </h1>
+        
 
         <h3>
           MERN Stack Developer
@@ -56,9 +74,37 @@ const Hero = () => {
 
       <div className="hero-right">
 
-        <img
+        {/* <img
           src={hero}
           alt="Akshat"
+        /> */}
+
+        <PixelTransition
+          firstContent={
+            <img
+              src={hero}
+              alt="akshat"
+              style={{ width: "100%", height: "100%", objectFit: "cover" }}
+            />
+         }        
+          secondContent={
+            <div  
+              style={{
+                width: "100%",
+                height: "100%",
+                display: "grid",
+                placeItems: "center",
+                backgroundColor: "#111"
+              }}
+            >
+              <p style={{ fontWeight: 900, fontSize: "3rem", color: "#ffffff" }}>Hello</p>
+            </div>
+          }
+          gridSize={8}
+          pixelColor="#ffffff"
+          once={false}
+          animationStepDuration={0.4}
+          className="custom-pixel-card"
         />
 
       </div>

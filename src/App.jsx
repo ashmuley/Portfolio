@@ -4,6 +4,8 @@ import Navbar from "./components/Navbar/Navbar";
 import Hero from "./components/Hero/Hero";
 import About from "./components/About/About";
 import Skills from "./components/Skills/Skills";
+import Projects from './components/Projects/Porject';
+import Contact from './components/Contact/Contact';
 
 import Ferrofluid from "./effects/backgd/Ferrofluid";
 
@@ -52,6 +54,10 @@ function App() {
        <About/>
        
        <Skills   />
+
+       <Projects />
+
+       <Contact />
 
     </>
 

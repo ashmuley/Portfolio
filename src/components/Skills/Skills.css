@@ -13,7 +13,9 @@
     padding-top: 80px;
     padding-bottom: 50px;
 
-    background:#09090B;
+    /* background:#09090B; */
+    background:rgba(0, 0, 0, 0.364);
+
 
     overflow: hidden;
 }
@@ -31,7 +33,7 @@
 
     font-size:64px;
 
-    color:white;
+    color:rgb(255, 255, 255);
 
     margin:20px 0;
 }
@@ -98,14 +100,14 @@
 
     
 
-    background:
+    /* background:
 
     linear-gradient(
     160deg,
     rgba(28,28,34,.95),
     rgba(15,15,18,.95)
-    );
-
+    ); */
+    background: black;
     border:1px solid rgba(255,255,255,.08);
 
     backdrop-filter:blur(25px);

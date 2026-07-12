@@ -28,18 +28,34 @@
     margin-bottom: 20px;
 }
 
-.hero h1 {
-    font-size: 80px;
+.hero-name {
+    /* font-size: 80px;
 
     line-height: 90px;
 
-    margin-bottom: 15px;
+    margin-bottom: 15px; *//
+
+    font-size:88px;
+
+    font-weight:800;
+
+    color:white;
+
+    line-height:90px;
+
+    margin:0 0 20px;
+
+    display:block;
+
+    letter-spacing:-2px;
+    
 }
 
-.hero h1 span {
+
+/* .hero h1 span {
     margin-left: 20px;
     color: #00e5ff;
-}
+} */
 
 .hero h3 {
     font-size: 28px;
@@ -114,17 +130,19 @@
 }
 
 .hero-right img {
-    width: 520px;
+    width: 380px;
+
+    height: 500px;
 
     max-width: 100%;
 
-    border-radius: 35px;
+    border-radius: 20px;
 
-    object-fit: cover;
+    
 
-    border: 2px solid rgba(255, 255, 255, 0.08);
+    /* border: 7px solid rgba(255, 255, 255, 0.956); */
 
-    box-shadow: 0 0 80px rgba(39, 38, 42, 0.25);
+    /* box-shadow: 0 0 80px rgba(39, 38, 42, 0.25); */
 }
 
 /* ================= RESPONSIVE ================= */
