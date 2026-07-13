@@ -6,7 +6,7 @@
 
     min-height:100vh;
 
-    padding:120px 80px;
+    padding:30px 80px;
 
     position:relative;
 
@@ -37,6 +37,7 @@
 .about-left{
 
     width:38%;
+   
 }
 
 .profile-card{
@@ -198,24 +199,12 @@
     display:grid;
 
     grid-template-columns:repeat(3,1fr);
+   
 
     gap:22px;
 }
 
-.info-card{
-
-    /* background:rgba(255,255,255,.03);
-
-    /* backdrop-filter:blur(20px); */
-
-    /* border:1px solid rgba(255,255,255,.06);
-
-    border-radius:22px;
-
-    padding:28px;
-
-    transition:.35s; */
-
+.info-cards{
    
     background: rgb(255 255 255 / 0%);
     backdrop-filter: blur(30px);
@@ -229,7 +218,7 @@
     flex-direction: column;
 }
 
-.info-card:hover{
+.info-cards:hover{
 
     transform:translateY(-8px);
 
@@ -246,14 +235,14 @@
     margin-bottom:18px;
 }
 
-.info-card h4{
+.info-cards h4{
 
     color:white;
     font-size:22px;
     margin: 0 0;
 }
 
-.info-card p{
+.info-cards p{
 
     color:white;
 
@@ -262,7 +251,7 @@
     margin-top: 10px;
 }
 
-.info-card span{
+.info-cards span{
 
     color:#9d9d9d;
 
@@ -273,7 +262,7 @@
 
 .stats-container{
 
-    margin-top:90px;
+    margin-top:40px;
     display:flex;
     justify-content:space-between;
     gap:25px;
@@ -445,17 +434,17 @@
         font-size:13px;
     }
 
-    .info-card{
+    .info-cards{
 
         padding:18px;
     }
 
-    .info-card h4{
+    .info-cards h4{
 
         font-size:18px;
     }
 
-    .info-card p{
+    .info-cards p{
 
         font-size:15px;
     }
@@ -479,5 +468,66 @@
 
         font-size:40px;
     }
+
+}
+
+/* ==========================================================
+                GSAP ANIMATION OPTIMIZATION
+========================================================== */
+
+.profile-card,
+.about-heading,
+.about-text,
+.info-cards,
+.stat-card {
+
+    will-change: transform, opacity, filter;
+
+    backface-visibility: hidden;
+
+    transform: translateZ(0);
+
+}
+
+/* Smooth rendering during blur animation */
+
+.profile-card img{
+
+    will-change: transform;
+
+}
+
+/* Better animation performance */
+
+.info-cards,
+.stat-card{
+
+    transform-origin: center center;
+
+}
+
+/* Optional: smoother hover after GSAP animation */
+
+.info-cards{
+
+    transition:
+    transform .35s,
+    box-shadow .35s,
+    border-color .35s;
+
+}
+
+.stat-card{
+
+    transition:
+    transform .35s;
+
+}
+
+/* Prevent blur edges during animation */
+
+.about{
+
+    overflow-x: hidden;
 
 }

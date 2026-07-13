@@ -11,6 +11,7 @@
     justify-content: space-between;
     position: relative;
     z-index: 10;
+    margin-top: 50px;
 }
 
 .hero-left {
@@ -18,52 +19,35 @@
     color: white;
 }
 
-.hero-tag {
-    padding: 8px 18px;
-    border-radius: 30px;
-    background: rgba(255, 255, 255, 0.08);
-    backdrop-filter: blur(12px);
-    border: 1px solid rgba(255, 255, 255, 0.08);
-    display: inline-block;
-    margin-bottom: 20px;
-}
-
 .hero-name {
-    /* font-size: 80px;
 
-    line-height: 90px;
+    margin:0;
 
-    margin-bottom: 15px; *//
+    padding:0;
 
-    font-size:88px;
+    font-size:80px;
 
     font-weight:800;
 
-    color:white;
+    line-height:0.95;
 
-    line-height:90px;
+    letter-spacing:-3px;
 
-    margin:0 0 20px;
-
-    display:block;
-
-    letter-spacing:-2px;
+    /* color:#f9bd25; */
+    
     
 }
 
 
-/* .hero h1 span {
-    margin-left: 20px;
-    color: #00e5ff;
-} */
+
 
 .hero h3 {
-    font-size: 28px;
-    color: #bfbfbf;
+    font-size: 32px;
+    color: #f7f7f7;
     margin-bottom: 20px;
 }
 
-.hero p {
+.hero-mern{
     width: 85%;
 
     font-size: 18px;
@@ -72,8 +56,27 @@
 
     line-height: 32px;
 
-    margin-bottom: 35px;
+    margin-bottom: 15px;
 }
+
+.bullets{
+    padding: 15px;
+    font-size: 18px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    border-radius: 12px;
+    background-color: rgb(28, 28, 28);
+}
+#bullet1{
+    box-shadow: 9px 4px 0px -3px cyan;
+}
+#bullet2{
+    box-shadow: 9px 4px 0px -3px rgb(236, 21, 255);
+}
+#bullet3{
+    box-shadow: 9px 4px 0px -3px rgb(255, 0, 51);
+}
+
 
 .hero-buttons {
     display: flex;
@@ -109,17 +112,10 @@
 
 .hero-social {
     display: flex;
-
-    gap: 25px;
-
-    margin-top: 40px;
+    flex-direction: column;
 }
 
-.hero-social a {
-    color: white;
 
-    text-decoration: none;
-}
 
 .hero-right {
     width: 45%;
