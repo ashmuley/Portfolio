@@ -275,3 +275,50 @@
     }
 
 }
+
+
+/* ******************** */
+.desktop-nav{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:28px;
+
+}
+
+.desktop-nav a{
+
+    color:white;
+
+    text-decoration:none;
+
+    padding:12px 22px;
+
+    border-radius:15px;
+
+    transition:.35s;
+
+    font-weight:800;
+    font-size: 25px;
+
+}
+
+.desktop-nav a:hover{
+
+    color:#00E5FF;
+
+}
+
+.active-link{
+
+    background:white;
+
+    color:black !important;
+
+    font-weight:600;
+
+    box-shadow:0 10px 25px rgba(255,255,255,.18);
+
+}

@@ -107,7 +107,7 @@ export default function Projects() {
 	const next = () => setActive((i) => (i + 1) % projects.length)
 
 	return (
-		<section className="projects-section">
+		<section className="projects-section" id='projects'>
 			<div className="projects-shell">
 				<aside className="projects-intro">
 					<div className="intro-badge">PROJECTS / 04</div>

@@ -8,6 +8,8 @@
   max-width: 100%;
   position: relative;
   overflow: hidden;
+  text-align: center;
+  line-height: 2.5;
 }
 
 .pixelated-image-card__default,

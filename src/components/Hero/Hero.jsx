@@ -268,7 +268,11 @@ const Hero = () => {
                     color: "#fff",
                   }}
                 >
-                  Hello
+                  LET'S BUILD
+
+                  SOMETHING
+
+                  AMAZING
                 </p>
               </div>
             }
